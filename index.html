@@ -72,6 +72,34 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     <button onclick="resetCanvas()">Reset Canvas</button>
 </div>
 
+
+<script>
+    // JavaScript functions for button actions
+    function drawRectangle() {
+        var myCanvas = document.getElementById("myCanvas");
+        var context = myCanvas.getContext("2d");
+        context.clearRect(0, 0, myCanvas.width, myCanvas.height); // Clear canvas
+        context.fillRect(50, 25, 150, 100); // Draw rectangle
+    }
+function drawName() {
+        var myCanvas = document.getElementById("myCanvas");
+        var context = myCanvas.getContext("2d");
+        context.clearRect(0, 0, myCanvas.width, myCanvas.height); // Clear canvas
+        context.font = "20px Arial"; // Font settings
+        context.fillText("Iwinosa", 50, 50); // Draw text aka my name
+    }
+	function loadImage() {
+        // Code to load image onto canvas (replace with actual implementation)
+        alert("url:thailand for git.webp");
+
+   }
+
+    function resetCanvas() {
+        var myCanvas = document.getElementById("myCanvas");
+        var context = myCanvas.getContext("2d");
+        context.clearRect(0, 0, myCanvas.width, myCanvas.height); // Clear canvas
+    }
+</script>
 </body>
 </html>
 
