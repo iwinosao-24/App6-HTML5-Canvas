@@ -64,12 +64,13 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 
 <body>
 
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
-	function draw_b() {
- 	var b_canvas = document.getElementById("b");
-        var b_context = b_canvas.getContext("2d");
-        b_context.fillRect(50, 25, 150, 100);
-}
+<canvas id="myCanvas" width="300" height="225" style="border:1px solid #000000;"></canvas>
+<div id="buttons">
+    <button onclick="drawRectangle()">Draw Rectangle</button>
+    <button onclick="drawName()">Draw Name</button>
+    <button onclick="loadImage()">Load Image</button>
+    <button onclick="resetCanvas()">Reset Canvas</button>
+</div>
 
 </body>
 </html>
