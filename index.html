@@ -88,9 +88,14 @@ function drawName() {
         context.font = "20px Arial"; // Font settings
         context.fillText("Iwinosa", 50, 50); // Draw text aka my name
     }
-	function loadImage() {
-        // Code to load image onto canvas (replace with actual implementation)
-        alert("url:thailand for git.webp");
+function loadImage() {
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+	var img = new Image();
+        	img.onload = function() {
+         	   context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        };
+        img.src = "https://www.travelstart.com.ng/blog/wp-content/uploads/2014/03/Mauritius.jpg";
 
    }
 
